@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Faruq & Winda Wedding</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- simplyCountdown -->
+  <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+  <script src="countdown/simplyCountdown.min.js"></script>
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+    <main>
+        <h4>Kepada Yth: <span>Bapak/Ibu/Saudara/i,</span></h4>
+        <h1 >Faruq & Winda</h1>
+        <p></p>Kami mengundang Anda untuk menghadiri acara pernikahan kami.
+        <!-- <div class="simply-countdown"></div> -->
+        <a href="#hero1" class="btn btn-lg mt-4" onClick="enableScroll()">Lihat Undangan</a>
+    </main>
+</section>
+
+<script>
+    function enableScroll() {
+        function smoothScroll(target, duration) {
+            var targetElement = document.querySelector(target);
+            var targetPosition = targetElement.offsetTop;
+            var startPosition = window.pageYOffset;
+            var distance = targetPosition - startPosition;
+            var startTime = null;
+
+            function animation(currentTime) {
+                if (startTime === null) startTime = currentTime;
+                var timeElapsed = currentTime - startTime;
+                var run = ease(timeElapsed, startPosition, distance, duration);
+                window.scrollTo(0, run);
+                if (timeElapsed < duration) requestAnimationFrame(animation);
+            }
+
+            function ease(t, b, c, d) {
+                t /= d / 2;
+                if (t < 1) return (c / 2) * t * t + b;
+                t--;
+                return (-c / 2) * (t * (t - 2) - 1) + b;
+            }
+
+            requestAnimationFrame(animation);
+        }
+
+        var rootElement = document.documentElement;
+        window.onscroll = function() {};
+        rootElement.style.scrollBehavior = 'smooth';
+        // playAudio(); // Jika diperlukan
+        smoothScroll('#hero1', 1000); // Ganti '#hero' dengan ID bagian undangan yang ingin digulirkan
+    }
+</script>
+
+  <audio loop="true" src="audio/Tiara Andini, Arsy Widianto - Cintanya Aku (Official Music Video)(2)(1).mp3" id="audio"></audio>
+  
+  <div class="hero1 w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white slide-left" id="hero1">
+    <main>
+    </main>
+    <!-- Tambahkan lingkaran di sini -->
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="text-bottom-right" style="margin-bottom: 20px;">
+      <h2 style="font-size: 35px;" style="margin-bottom: 10px;">THE WEDDING OF</h2>
+      <h1 style="font-size: 25px;">Faisa Faruq</h1>
+      <h1 style="font-size: 25px;">Winda Ayu Amelia</h1>
+      <p>16 APRIL 2024</p>
+    </div>
+  </div>
+  
+<div id="fh5co-couple">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2 text-center animate-box fadeInUp animated-fast slide-left">
+        <h1 style="color:#304058;font-size:45px">Bride & Groom</h1>
+        <p><i style="white-space:pre-line;">Bismillahirrahmanirrahim dengan memohon rahmat dan ridho Allah SWT, kami memohon kehadiran Bapak/Ibu/Saudara/i pada acara pernikahan kami :</i>
+        </p>
+      </div>
+    </div>
+    <div class="couple-wrap animate-box fadeInUp animated-fast">
+      <div class="couple-half slide-left">
+        <div class="groom slide-left"> 
+          <img src="img/IMG_8145.JPEG" alt="groom" class="img-responsive">
+        </div>
+        <div class="desc-groom slide-left">
+          <h3 style="color:#304058;">Faisal Faruq</h3>
+          <p style="font-size: 18px;">
+            <i style="font-size: 27px;">Putra dari :</i><br>
+            Bapak Asnaful Aminin &amp; Ibu Suryati
+          </p>
+          <a href="https://www.instagram.com/faisalfrq/">
+            <p style="font-size: 22px;">faisalfrq<i class="fa fa-instagram" ></i></p>
+          </a>
+        </div>
+      </div>
+      <p class="heart text-center"><i class="icon-heart2" style="color:#304058;"></i></p>
+      <div class="couple-half slide-left">
+        <div class="bride slide-left"> 
+          <img src="img/IMG_8146.JPEG" alt="bride" class="img-responsive">
+        </div>
+        <div class="desc-bride slide-left">
+          <h3 style="color:#304058;">Winda Ayu Amelia</h3>
+          <p style="font-size: 18px;">
+            <i style="font-size: 27px;">Putri dari :</i><br>
+            Bapak Khoirul Huda &amp; Ibu Nur Hidayah
+          </p>
+          <a href="https://www.instagram.com/wndh_ayu/">
+            <p style="font-size: 22px;">wndh_ayu<i class="fa fa-instagram" ></i></p>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+    
+  
+    <div class="text-center" data-aos="fade-up" data-aos-duration="2000">
+      <div class="circle-image slide-left">
+        <img src="img/IMG_8128.JPEG" alt="Foto">
+      </div>
+      <h1 class="font-montserrat mt-3 mb-3 slide-left" style="font-size: 2rem;" >
+        Allah Subhanahu Wa Ta'ala berfirman
+      </h1>
+      <p style="font-size: 1rem;" class="px-2 slide-left">
+        Dan di antara tanda-tanda (kebesaran)-Nya ialah Dia menciptakan pasangan-pasangan untukmu dari jenismu sendiri, agar kamu cenderung dan merasa tenteram kepadanya, dan Dia menjadikan di antaramu rasa kasih dan sayang. Sungguh, pada yang demikian itu benar-benar terdapat tanda-tanda (kebesaran Allah) bagi kaum yang berpikir.
+      </p>
+      <span class="mb-0 slide-left"><strong>QS. Ar-Rum Ayat 21</strong></span>
+    </div>
+  </div>
+</div>
+</div>
+
+<section id="info" class="info slide-left">
+  <center><h2>Save The Date</h2></center>
+  <center><p>April 16th, 2024</p></center>
+  <div class="simply-countdown slide-left"></div>
+  <div class="allah slide-left">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center">
+        <h2>Informasi Acara</h2>
+        <p class="alamat">Alamat: Gresik, Jawa Timur. <br> Jl. Jaksa Agung Suprapto Gang 2 No 8</p>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb/Jl.+Jaksa+Agung+Suprapto+Gg.+II+No.18,+Tlogobendung,+Bedilan,+Kec.+Gresik,+Kabupaten+Gresik,+Jawa+Timur+61111/@-7.1616841,112.6539431,1700m/data=!3m1!1e3!4m5!3m4!1s0x2dd80045392ddbc3:0xf2a4675bda477eb7!8m2!3d-7.1616841!4d112.6539431?entry=ttu"
+            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <a href="https://www.google.com/maps/place/Jl.+Jaksa+Agung+Suprapto+Gg.+II+No.18,+Tlogobendung,+Bedilan,+Kec.+Gresik,+Kabupaten+Gresik,+Jawa+Timur+61111" target="_blank" class="btn btn-light btn-sm my-3">Klik untuk membuka peta</a>
+
+
+      </div>
+    </div>
+    <div class="row justify-content-center mt-4 slide-left">
+      <div class="col-md-5 col-10">
+        <div class="card text-center text-bg-light mb-5">
+          <div class="card-header">Akad Nikah</div>
+          <div class="card-body">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <i class="bi bi-clock d-block"></i>
+                <span>Pukul: 07.00 WIB</span>
+              </div>
+              <div class="col-md-6">
+                <i class="bi bi-calendar3 d-block"></i>
+                <span>Minggu, 16 April 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-4 slide-left">
+      <div class="col-md-5 col-10">
+        <div class="card text-center text-bg-light mb-5">
+          <div class="card-header">Resepsi</div>
+          <div class="card-body">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
+                <i class="bi bi-clock d-block"></i>
+                <span>Pukul: 19.00-selesai</span>
+              </div>
+              <div class="col-md-6">
+                <i class="bi bi-calendar3 d-block"></i>
+                <span>Minggu, 16 April 2024</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+</section>
+<section id="story" class="story slide-left">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 col-10 text-center">
+        <span>Bagaimana Cinta Kami Bersemi</span>
+        <h2>Cerita Kami</h2>
+      </div>
+    </div>
+
+    <div class="row justify-content-center slide-left">
+      <div class="col-md-6 col-lg-3">
+        <h3>Pertemuan</h3>
+        <div class="card-box">
+          <p>Tidak ada yang kebetulan di dunia ini, semua sudah tersusun rapi oleh sang maha kuasa, kita tidak bisa memilih kepada siapa kita akan jatuh cinta, kami bertemu di tahun 2016 tepatnya saat kami kelas 2 MTs. Tidak ada yang pernah menyangka bahwa pertemuan itu akan membawa kami pada suatu ikatan sutu hari nanti 
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 slide-left">
+        <h3>Pendekatan</h3>
+        <div class="card-box">
+          <p>Singkat cerita, seiring berjalannya waktu kami terus berkomunikasi saling bertukar cerita dan berkeluh kesah ,dan sampai akhirnya kami berdua saling nyatakan perasaan dan berkomitmen untuk menjalani hubungan berpacaran 
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 slide-left">
+       <h3>Lamaran</h3>
+        <div class="card-box">
+          <p>Semakin lama kami semakin merasa saling melengkapi satu sama lain dan merasakan bahwa memang dialah orang yang cocok untuk menjadi teman hidup baik suka dan duka. Sesuai dengan kesepakatan kami berdua. kami telah memutuskan untuk melanjutkan hubungan ke jenjang yang lebih serius dan di saksikan oleh kedua belah pihak keluarga 
+          </p>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3 slide-left">
+        <h3>Menikah</h3>
+        <div class="card-box">
+          <p>Percayalah, bukan karna bertemu lalu berjodoh tapi karena berjodoh lah maka kami dipertemukan, InsyaAllah tepat pada tanggal 16 April 2024 kami akan melangsungkan moment yang ditunggu-tunggu untuk menjadi ikatan sah yaitu akad nikah </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="gallery12 slide-left">
+    <h2>Our Gallery</h2>
+    <div class="gallery-images12 ">
+      <div class="gallery-image13 slide-left">
+        <img src="img/BS (291 of 318).jpg" alt="Image 1" width="100%" >
+      </div>
+      <div class="gallery-image12 slide-left">
+        <img src="img/BS (299 of 318).jpg" alt="Image 2" >
+      </div>
+      <div class="gallery-image12 slide-left">
+        <img src="img/BS (255 of 318).jpg" alt="Image 3" >
+      </div>
+      <div class="gallery-video13">
+        <video controls autoplay muted>
+          <source src="video/WhatsApp Video 2024-02-05 at 18.46.43(2).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <script>
+        function restartVideo() {
+          var video = document.getElementById("myVideo");
+          video.currentTime = 0;
+          video.play();
+        }
+        </script>   
+      <div class="gallery-image13 slide-left">
+        <img src="img/BS (79 of 508).jpg" alt="Image 4"width="100%" >
+      </div>
+      <div class="gallery-image12 slide-left">
+        <img src="img/BS (85 of 508).jpg" alt="Image 5" >
+      </div>
+      <div class="gallery-image12 slide-left">
+        <img src="img/BS (141 of 508).jpg" alt="Image 6" >
+      </div>
+      <div class="gallery-image13 slide-left">
+        <img src="img/BS (323 of 508).jpg" alt="Image 7" width="100%" >
+      </div>
+      <div class="gallery-image12 slide-left">
+        <img src="img/BS (451 of 508).jpg" alt="Image 8" >
+      </div>
+      <div class="gallery-image12 slide-left">
+        <img src="img/BS (283 of 508).jpg" alt="Image 9" >
+      </div>
+    </div>
+  </section>
+<div class="card-box">
+  <div class="heroo">
+    <h1>FILTER WEDDING</h1>
+    <p>Capture your moment while attending our wedding by using the instagram filter below.</p>
+    <img src="img/WhatsApp Image 2024-02-08 at 10.33.10.jpeg" alt="Foto" width="100%">
+  </div>
+  <a href="https://www.instagram.com/ar/380022517963862/"><button>Use Filter</button></a>
+</div>
+   <section id="rsvp" class="rsvp">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-8 col-10 text-center">
+          <h2>Konfirmasi Kehadiran</h2>
+          <p>Isi form di bawah ini untuk melakukan konfirmasi kehadiran.</p>
+        </div>
+      </div>
+
+      <form class="row row-cols-md-auto g-3 align-items-center justify-content-center" method="POST"
+        action="https://script.google.com/macros/s/AKfycbyddFbEJRqwEeA6OmZAuNf0jw_B30ZUOS5qSDwlAKV_nurcW7H6osJx2ZWnIeTmPm_35g/exec"
+        id="my-form">
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="nama" class="form-label">Nama</label>
+            <input type="text" class="form-control" id="nama" name="nama">
+          </div>
+        </div>
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="jumlah" class="form-label">Jumlah</label>
+            <input type="number" class="form-control" id="jumlah" name="jumlah" min="1" max="5" length="1" value="1">
+          </div> 
+        </div>
+        <div class="col-12">
+          <div class="mb-3">
+            <label for="status" class="form-label">Konfirmasi</label>
+            <select name="status" id="status" class="form-select">
+              <option selected>Pilih salah satu</option>
+              <option value="Hadir">Hadir</option>
+              <option value="Tidak Hadir">Tidak Hadir</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-12" style="margin-top: 35px;">
+          <button class="btn btn-primary">Kirim</button>
+        </div>
+      </form>
+
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6">
+          <div id="disqus_thread"></div>
+          <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+
+          
+
+            (function () { // DON'T EDIT BELOW THIS LINE
+              var d = document, s = d.createElement('script');
+              s.src = '//wildan-wedding.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+            })();
+          </script>
+          <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+              Disqus.</a></noscript>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+      
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col text-center">
+          <div class="image-container">
+            <div class="overlay">
+              <p>Thank You</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <ul class="social-icons">
+      <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+      <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+      <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+      <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+      <li><a href="#"><i class="bi bi-tiktok"></i></a></li>
+    </ul>
+  </footer>
+  
+
+  
+  <script>
+		document.addEventListener("DOMContentLoaded", function (event) {
+			let audio = document.getElementById("audio");
+			let button = document.getElementById('mute');
+			if (+localStorage.getItem('mute')) {
+				audio.muted = true;
+				button.innerHTML = '<i color="#000" class="fa fa-volume-off my-float"></i>';
+				audio.pause()
+			} else {
+				audio.volume = 0.9;
+				audio.play()
+			}
+		})
+
+		function mute() {
+			let audio = document.getElementById('audio');
+			let button = document.getElementById('mute');
+			let isMute = +localStorage.getItem('mute');
+			if (!isMute) {
+				audio.muted = true;
+				audio.pause()
+				button.innerHTML = '<i color="#000" class="fa fa-volume-off my-float"></i>';
+				localStorage.setItem('mute', 1);
+			} else {
+				audio.muted = false;
+				audio.volume = 0.9;
+				audio.play()
+				button.innerHTML = '<i color="#fff" class="fa fa-volume-up my-float"></i>';
+				localStorage.setItem('mute', 0);
+
+			}
+		}
+	</script>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+  <script>
+    simplyCountdown('.simply-countdown', {
+      year: 2024, // Tahun
+      month: 4, // Bulan (dimulai dari 0 untuk Januari, 1 untuk Februari, dst.)
+      day: 16, // Tanggal
+      hours: 16, // Jam
+      minutes: 32, // Menit
+      seconds: 0, // Detik
+      words: {
+          days: { singular: 'day', plural: 'days' },
+          hours: { singular: 'hour', plural: 'hours' },
+          minutes: { singular: 'minute', plural: 'minutes' },
+          seconds: { singular: 'second', plural: 'seconds' }
+      },
+    });
+  </script>
+  
+
+  <script>
+    const stickyTop = document.querySelector('.sticky-top');
+    const offcanvas = document.querySelector('.offcanvas');
+
+    offcanvas.addEventListener('show.bs.offcanvas', function () {
+      stickyTop.style.overflow = 'visible';
+    });
+
+    offcanvas.addEventListener('hidden.bs.offcanvas', function () {
+      stickyTop.style.overflow = 'hidden';
+    });
+
+  </script>
+
+  <script>
+    const rootElement = document.querySelector(":root");
+    const audioIconWrapper = document.querySelector('.audio-icon-wrapper');
+    const audioIcon = document.querySelector('.audio-icon-wrapper i');
+    const song = document.querySelector('#song');
+    let isPlaying = false;
+
+    function enableScroll() {
+      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+      window.onscroll = function () {
+        window.scrollTo(scrollTop, scrollLeft);
+      }
+
+      rootElement.style.scrollBehavior = 'auto';
+    }
+
+    function enableScroll() {
+      window.onscroll = function () { }
+      rootElement.style.scrollBehavior = 'smooth';
+      // localStorage.setItem('opened', 'true');
+      playAudio();
+    }
+
+    function playAudio() {
+      song.volume = 0.1;
+      audioIconWrapper.style.display = 'flex';
+      song.play();
+      isPlaying = true;
+    }
+
+    audioIconWrapper.onclick = function () {
+      if (isPlaying) {
+        song.pause();
+        audioIcon.classList.remove('bi-disc');
+        audioIcon.classList.add('bi-pause-circle');
+      } else {
+        song.play();
+        audioIcon.classList.add('bi-disc');
+        audioIcon.classList.remove('bi-pause-circle');
+      }
+
+      isPlaying = !isPlaying;
+    }
+
+    // if (!localStorage.getItem('opened')) {
+    //   disableScroll();
+    // }
+    disableScroll();
+  </script>
+  <script>
+    window.addEventListener("load", function () {
+      const form = document.getElementById('my-form');
+      form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        const data = new FormData(form);
+        const action = e.target.action;
+        fetch(action, {
+          method: 'POST',
+          body: data,
+        })
+          .then(() => {
+            alert("Konfirmasi kehadiran berhasil terkirim!");
+          })
+      });
+    });
+
+  </script>
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const nama = urlParams.get('n') || '';
+    const pronoun = urlParams.get('p') || 'Bapak/Ibu/Saudara/i';
+    const namaContainer = document.querySelector('.hero h4 span');
+    namaContainer.innerText = `${pronoun} ${nama},`.replace(/ ,$/, ',');
+
+    document.querySelector('#nama').value = nama;
+  </script>
+  <script>
+    function smoothScroll(target, duration) {
+      var targetElement = document.querySelector(target);
+      var targetPosition = targetElement.offsetTop;
+      var startPosition = window.pageYOffset;
+      var distance = targetPosition - startPosition;
+      var startTime = null;
+  
+      function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        var timeElapsed = currentTime - startTime;
+        var run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+      }
+  
+      function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      }
+  
+      requestAnimationFrame(animation);
+    }
+  
+    var button = document.querySelector('.btn');
+  
+    button.addEventListener('click', function() {
+      smoothScroll('#home', 1000); // Ganti '#home' dengan id dari bagian yang ingin digulir
+    });
+  </script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var sections = document.querySelectorAll('.slide-left');
+  
+    function checkScroll() {
+      sections.forEach(function(section) {
+        var position = section.getBoundingClientRect().top;
+        var windowHeight = window.innerHeight;
+  
+        if (position < windowHeight * 0.75) {
+          section.classList.add('active');
+        }
+      });
+    }
+  
+    // Jalankan fungsi checkScroll() saat halaman dimuat dan di-scroll
+    checkScroll();
+    window.addEventListener('scroll', checkScroll);
+  });
+</script>
+  
+  
+</body>
+
+</html>
